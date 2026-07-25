@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HTML Responsive</title>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .izquierda {
+            background-color: lightblue;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        .principal {
+            background-color: lightgray;
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+
+        .derecha {
+            background-color: lightgreen;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 800px) {
+            .izquierda,
+            .principal,
+            .derecha {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Diseño web adaptable</h1>
+
+    <p>
+        Cambia el tamaño de la ventana para observar cómo
+        se adapta el contenido.
+    </p>
+
+    <img
+        src="https://www.w3schools.com/html/img_girl.jpg"
+        alt="Ejemplo de imagen adaptable">
+
+    <div class="izquierda">
+        <p>Menú izquierdo</p>
+    </div>
+
+    <div class="principal">
+        <p>Contenido principal</p>
+    </div>
+
+    <div class="derecha">
+        <p>Contenido derecho</p>
+    </div>
+
+</body>
+</html>
