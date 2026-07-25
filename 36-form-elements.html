@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+</head>
+
+<body>
+
+    <h1>Elementos de formularios HTML</h1>
+
+    <form>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="lenguaje">Selecciona un lenguaje:</label><br>
+        <select id="lenguaje" name="lenguaje">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="30">
+Escribe aquí tu comentario.
+        </textarea><br><br>
+
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo">
+        </fieldset><br>
+
+        <label for="navegador">Selecciona un navegador:</label><br>
+        <input list="navegadores" id="navegador" name="navegador">
+
+        <datalist id="navegadores">
+            <option value="Google Chrome">
+            <option value="Microsoft Edge">
+            <option value="Mozilla Firefox">
+        </datalist><br><br>
+
+        <button type="button" onclick="alert('Formulario revisado')">
+            Presionar
+        </button>
+
+    </form>
+
+</body>
+</html>
